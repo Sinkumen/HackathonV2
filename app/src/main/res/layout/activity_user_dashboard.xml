@@ -37,7 +37,7 @@
                     android:id="@+id/learn"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-
+                    android:src="@drawable/volunteer_life_guard_helps_young_girl_out_sea"
                     android:layout_margin="10dp"/>
 
                 <TextView
@@ -67,13 +67,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center">
-
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/test"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-
-                    android:layout_margin="10dp"/>
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/citizens"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#FF000000"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -115,7 +116,8 @@
                     android:id="@+id/gameimg"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_margin="10dp"/>
+                    android:layout_margin="10dp"
+                    android:src="@drawable/structure_clipart_office_building_company_icon_flat_design"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -150,7 +152,8 @@
                     android:id="@+id/gameimg1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_margin="10dp"/>
+                    android:layout_margin="10dp"
+                    android:src="@drawable/Public_Service_Logo"/>
 
                 <TextView
                     android:layout_width="match_parent"
