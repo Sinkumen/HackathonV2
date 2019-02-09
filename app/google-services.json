@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "880021315285",
+    "firebase_url": "https://rdi-hack.firebaseio.com",
+    "project_id": "rdi-hack",
+    "storage_bucket": "rdi-hack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880021315285:android:919d55d7a57f5951",
+        "android_client_info": {
+          "package_name": "com.example.cnkua.rdihackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880021315285-lbdt01g7t99qmuv18r0v7gv9vq9l99au.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cnkua.rdihackathon",
+            "certificate_hash": "f7cc803eb4f2a18e3f21717f74f4b773c5e1c3a7"
+          }
+        },
+        {
+          "client_id": "880021315285-ou7g7tgdsl5rplrc07fcj1v2p22k0ha2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJgIlcPhPNaS2K2kn2ObFKtP9moj-vySA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880021315285-ou7g7tgdsl5rplrc07fcj1v2p22k0ha2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
