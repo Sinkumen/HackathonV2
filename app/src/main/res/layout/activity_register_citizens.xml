@@ -24,51 +24,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/citizenLinearLayout1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/circle"
-                    android:padding="10dp"
-                    android:src="@drawable/img_register"
-                    android:tint="@color/white" />
-
-                <TextView
-                    android:id="@+id/headerText"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/citizenLinearLayout1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="REGISTER REFUGEES"
-                    android:textColor="@color/white"
-                    android:textSize="22sp" />
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-            </LinearLayout>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:src="@drawable/img_register"
+                        android:tint="@color/colorPrimary" />
 
-            <ImageView
-                android:id="@+id/citizenImageView1"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_below="@+id/citizenLinearLayout1"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="-10dp"
-                android:rotation="45"
-                android:src="@drawable/square" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="REGISTER CITIZEN"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+
 
                 <RelativeLayout
                     android:id="@+id/citizenRelativeLayout1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/citizenImageView1"
+                    android:layout_below="@+id/citizenLinearLayout1"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="30dp">
@@ -77,10 +68,10 @@
                         android:id="@+id/imgView_userIcon"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@color/colorPrimary"
+                        android:background="@color/white"
                         android:padding="8dp"
                         android:src="@drawable/img_user"
-                        android:tint="@color/white" />
+                        android:tint="@color/colorPrimary" />
 
                     <EditText
                         android:id="@+id/CFirstNameField"
@@ -108,10 +99,10 @@
                         android:id="@+id/imgView_passwordIcon"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@color/colorPrimary"
+                        android:background="@color/white"
                         android:padding="8dp"
                         android:src="@drawable/img_user"
-                        android:tint="@color/white" />
+                        android:tint="@color/colorPrimary" />
 
                     <EditText
                         android:id="@+id/CLastNameField"
@@ -139,13 +130,13 @@
                         android:id="@+id/imgView_repasswordIcon"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@color/colorPrimary"
+                        android:background="@color/white"
                         android:padding="8dp"
                         android:src="@drawable/img_email"
-                        android:tint="@color/white" />
+                        android:tint="@color/colorPrimary" />
 
                     <EditText
-                        android:id="@+id/REmailField"
+                        android:id="@+id/CEmailField"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignBottom="@+id/imgView_repasswordIcon"
@@ -171,10 +162,10 @@
                         android:id="@+id/imgView_emailIcon"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@color/colorPrimary"
+                        android:background="@color/white"
                         android:padding="8dp"
                         android:src="@drawable/ic_phone_white_24dp"
-                        android:tint="@color/white" />
+                        android:tint="@color/colorPrimary" />
 
                     <EditText
                         android:id="@+id/RPhoneNumberField"
@@ -203,10 +194,10 @@
                         android:id="@+id/imgView_emailIcon1"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@color/colorPrimary"
+                        android:background="@color/white"
                         android:padding="8dp"
                         android:src="@drawable/ic_today_black_24dp"
-                        android:tint="@color/white" />
+                        android:tint="@color/colorPrimary" />
 
                     <EditText
                         android:id="@+id/RAgeField"
@@ -232,20 +223,14 @@
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="15dp">
 
-                    <Switch
-                        android:id="@+id/switch1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Switch" />
-
                     <ImageView
                         android:id="@+id/imgView_emailIcon2"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@color/colorPrimary"
+                        android:background="@color/white"
                         android:padding="8dp"
                         android:src="@drawable/ic_place_black_24dp"
-                        android:tint="@color/white" />
+                        android:tint="@color/colorPrimary" />
 
                     <EditText
                         android:id="@+id/ROriginField"
@@ -271,12 +256,10 @@
                     android:layout_marginTop="20dp" >
 
                     <RadioButton
-                        android:id="@+id/maleRadio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Male" />
                     <RadioButton
-                        android:id="@+id/femaleRadio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
@@ -301,7 +284,6 @@
                         android:layout_marginBottom="15dp"
                         />
                     <TextView
-                        android:id="@+id/cameraText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -328,40 +310,25 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="15dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/white"
                     android:fontFamily="sans-serif-medium"
                     android:text="SIGN UP"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/colorPrimary" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:layout_below="@+id/registerButton">
-                    <Button
-                        android:id="@+id/backButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="15dp"
-                        android:background="@color/transparent"
-                        android:fontFamily="sans-serif"
-                        android:text="Go Back"
-                        android:textAllCaps="false"
-                        android:textColor="@color/textColor"
-                        android:textSize="13sp" />
-
-                    <Switch
-                        android:id="@+id/LanguageSwitch"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/backButton"
-                        android:text="Change Language"
-                        />
-                </LinearLayout>
-
+                    android:layout_below="@+id/registerButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/transparent"
+                    android:fontFamily="sans-serif"
+                    android:text="Go Back"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textSize="13sp" />
 
             </RelativeLayout>
 

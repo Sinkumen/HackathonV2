@@ -24,45 +24,45 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/citizenLinearLayout1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:gravity="center"
-                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/citizenLinearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:src="@drawable/img_register"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/headerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="REGISTER ORGANIZATION"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/circle"
-                    android:padding="10dp"
-                    android:src="@drawable/img_register"
-                    android:tint="@color/white" />
-
-                <TextView
-                    android:id="@+id/headerText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="REGISTER REFUGEES"
-                    android:textColor="@color/white"
-                    android:textSize="22sp" />
-
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/citizenImageView1"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_below="@+id/citizenLinearLayout1"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="-10dp"
-                android:rotation="45"
-                android:src="@drawable/square" />
+                    android:id="@+id/citizenImageView1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/citizenLinearLayout1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-10dp"
+                    android:rotation="45"
+                    android:src="@drawable/square" />
 
                 <RelativeLayout
                     android:id="@+id/citizenRelativeLayout1"
@@ -90,7 +90,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_toRightOf="@+id/imgView_userIcon"
                         android:background="@color/editTextBG"
-                        android:hint="First Name"
+                        android:hint="Organization Name"
                         android:paddingLeft="20dp"
                         android:textSize="15sp" />
 
@@ -121,7 +121,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_toRightOf="@+id/imgView_passwordIcon"
                         android:background="@color/editTextBG"
-                        android:hint="Last Name"
+                        android:hint="Working Area"
                         android:paddingLeft="20dp"
                         android:textSize="15sp" />
 
@@ -217,7 +217,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_toRightOf="@+id/imgView_emailIcon1"
                         android:background="@color/editTextBG"
-                        android:hint="Age"
+                        android:hint="Password"
                         android:inputType="number"
                         android:paddingLeft="20dp"
                         android:textSize="15sp" />
@@ -255,7 +255,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_toRightOf="@+id/imgView_emailIcon2"
                         android:background="@color/editTextBG"
-                        android:hint="Origin"
+                        android:hint="Location"
                         android:paddingLeft="20dp"
                         android:textSize="15sp" />
 
@@ -267,56 +267,25 @@
                     android:layout_height="wrap_content"
 
                     android:layout_below="@+id/relativeLayout6"
-                    android:layout_marginLeft="22dp"
+
                     android:layout_marginTop="20dp" >
 
                     <RadioButton
                         android:id="@+id/maleRadio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Male" />
+                        android:layout_alignLeft="@+id/Gender"
+                        android:layout_alignStart="@+id/Gender"
+                        android:layout_alignTop="@+id/Gender"
+                        android:text="NON GOVERNMENTAL" />
                     <RadioButton
                         android:id="@+id/femaleRadio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:text="Female"/>
+                        android:layout_marginLeft="10dp"
+                        android:text="GOVERNMENTAL"/>
                 </RadioGroup>
 
-                <LinearLayout
-                    android:id="@+id/floating"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/Gender">
-                    <android.support.design.widget.FloatingActionButton
-                        android:id="@+id/CameraButton"
-                        android:layout_width="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_height="wrap_content"
-
-                        android:src="@drawable/ic_camera_black_24dp"
-
-                        android:background="@color/colorPrimary"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="15dp"
-                        />
-                    <TextView
-                        android:id="@+id/cameraText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="20dp"
-                        android:text="Open Camera"/>
-                </LinearLayout>
-
-
-                <ImageView
-                    android:layout_centerHorizontal="true"
-                    android:id="@+id/ImagefromCamera"
-                    android:layout_width="100dp"
-                    android:layout_below="@+id/floating"
-                    android:layout_height="100dp"
-                    android:background="@color/colorPrimary"/>
 
 
 
@@ -324,7 +293,7 @@
                     android:id="@+id/registerButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ImagefromCamera"
+                    android:layout_below="@+id/Gender"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="15dp"

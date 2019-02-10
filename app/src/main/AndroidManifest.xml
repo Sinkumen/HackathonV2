@@ -20,7 +20,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".UserDashboardActivity" />
-        <activity android:name=".RefugeeRegistrationActivity"></activity>
+        <activity android:name=".RefugeeRegistrationActivity" />
+        <activity android:name=".RegisterCitizensActivity" />
+        <activity android:name=".RegisterCompanyActivity" />
+        <activity android:name=".ProvideServiceActivity"></activity>
     </application>
 
 </manifest>
